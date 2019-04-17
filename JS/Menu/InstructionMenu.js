@@ -36,6 +36,13 @@ class InstructionMenu extends GameScene{
         addInstruction.addLongPressEvent(AddHint);
         addInstruction.addClickEvent(AddHint);
         this.addComponent(addInstruction,-1);
+        var a = document.createElement('a');
+        var linkText = document.createTextNode("Back To Game");
+        a.appendChild(linkText);
+        a.title = "Back To Game";
+        a.href = "http://hbai.me/sprint2";
+        document.body.appendChild(a);
+
     }
 }
 module.exports=InstructionMenu;
